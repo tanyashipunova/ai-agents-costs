@@ -8,7 +8,13 @@ The cost per button is equal to **$1.97 per cycle**. It seems low. But if a team
 
 To sum up, it's an idea for a project named Cost calculator for AI-agents collaboration.
 
+Special thanks to Andrei Antoshkin for the inspiring post how AI changes processes.
+
 ---
 
+UPD
+Another new architecture of an AI agents system. I'm using the same example with a button added to the project.
 
-Special thanks to Andrei Antoshkin for the inspiring post how AI changes processes.
+In a new Sequence diagram, I showed the interaction between the Code AI agent and three new agents: the QA Analyst AI agent, the API Automation AI agent, and the E2E UI Automation AI agent. I added a test environment and an orchestrator for logic and memory management. There is a test case where a UI test fails due to a bug, and the agents localize and fix the error themselves.
+
+In this model, adding a button to a web-site with 50k tokens repo context costs **~$0.46 per almost perfect run**.
