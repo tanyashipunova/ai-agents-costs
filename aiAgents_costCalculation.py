@@ -1,3 +1,4 @@
+# This is a genAI logic of the code structure
 # Cost calculation for a scenario with bugs
 # A project base context = 50 000 tokens
 
