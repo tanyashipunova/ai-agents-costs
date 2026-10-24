@@ -1,3 +1,5 @@
+# Phase 1
+
 Suppose there is an enterprise with a paid subscription to use AI-agents platform. The company has a web-site. Each day a product owner wants to add a new or update old feature (for example, a button) to the web-site. The product owner decides to implement features using an AI-agents platform. How much will it cost?
 
 I decided to calculate costs for that case. The artefacts committed in the folder:
@@ -8,11 +10,8 @@ The cost per button is equal to **$1.97 per cycle**. It seems low. But if a team
 
 To sum up, it's an idea for a project named Cost calculator for AI-agents collaboration.
 
-Special thanks to Andrei Antoshkin for the inspiring post how AI changes processes.
+# Phase 2
 
----
-
-UPD
 Another new architecture of an AI agents system. I'm using the same example with a button added to the project.
 
 In a new Sequence diagram, I showed the interaction between the Code AI agent and three new agents: the QA Analyst AI agent, the API Automation AI agent, and the E2E UI Automation AI agent. I added a test environment and an orchestrator for logic and memory management. There is a test case where a UI test fails due to a bug, and the agents localize and fix the error themselves.
