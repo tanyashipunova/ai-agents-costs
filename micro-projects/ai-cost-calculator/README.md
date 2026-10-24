@@ -17,3 +17,7 @@ Another new architecture of an AI agents system. I'm using the same example with
 In a new Sequence diagram, I showed the interaction between the Code AI agent and three new agents: the QA Analyst AI agent, the API Automation AI agent, and the E2E UI Automation AI agent. I added a test environment and an orchestrator for logic and memory management. There is a test case where a UI test fails due to a bug, and the agents localize and fix the error themselves.
 
 In this model, adding a button to a web-site with 50k tokens repo context costs **~$0.46 per almost perfect run**.
+
+# Phase 3 (v1622)
+
+I've described the internal logic of Orchestrator (the automation process state machine). I've added preflight checks to address critical architectural risks of AI agents: endless code autofixes and uncontrolled spending. The diagram details the requirements for self-healing of the AI ​​system.
