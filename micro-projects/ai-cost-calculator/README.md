@@ -1,4 +1,9 @@
-# Phase 1 (v14xx)
+# Planning Costs Calculator for AI-agents collaboration
+[← Home](../../README.md)
+
+---
+
+## Phase 1 (v14xx)
 
 Suppose there is an enterprise with a paid subscription to use AI-agents platform. The company has a web-site. Each day a product owner wants to add a new or update old feature (for example, a button) to the web-site. The product owner decides to implement features using an AI-agents platform. How much will it cost?
 
@@ -10,7 +15,9 @@ The cost per button is equal to **$1.97 per cycle**. It seems low. But if a team
 
 To sum up, it's an idea for a project named Cost calculator for AI-agents collaboration.
 
-# Phase 2 (v1513)
+---
+
+## Phase 2 (v1513)
 
 Another new architecture of an AI agents system. I'm using the same example with a button added to the project.
 
@@ -18,6 +25,13 @@ In a new Sequence diagram, I showed the interaction between the Code AI agent an
 
 In this model, adding a button to a web-site with 50k tokens repo context costs **~$0.46 per almost perfect run**.
 
-# Phase 3 (v1622)
+---
+
+## Phase 3 (v1622)
 
 I've described the internal logic of Orchestrator (the automation process state machine). I've added preflight checks to address critical architectural risks of AI agents: endless code autofixes and uncontrolled spending. The diagram details the requirements for self-healing of the AI ​​system.
+
+---
+
+## Phase 4
+*IN PROGRESS*
