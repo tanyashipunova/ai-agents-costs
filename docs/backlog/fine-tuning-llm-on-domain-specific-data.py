@@ -1,4 +1,4 @@
-# Пример реализации на Python
+# Draft idea for code review, debugging, refactoring, etc.
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments
 from peft import LoraConfig, get_peft_model
