@@ -1,4 +1,5 @@
-# This is a genAI logic of the code structure
+# This is a genAI logic of the code structure composing and a way of double checking during a text converstion with math theme (preserved for a further research).
+
 # Cost calculation for a scenario with bugs
 # A project base context = 50 000 tokens
 
