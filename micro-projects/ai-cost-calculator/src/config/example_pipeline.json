@@ -1,0 +1,23 @@
+{
+  "model": "LLM2",
+  "base_repo_tokens": 50000,
+  "agents": {
+    "UI": "Агент-Интерфейс",
+    "Code": "Агент-Код",
+    "Test": "Агент-Тесты",
+    "Rules": "Агент-Правила",
+    "Doc": "Агент-Документация"
+  },
+  "pipeline": [
+    {"from": "UI", "to": "Code", "desc": "UI-код кнопки", "out": 2000},
+    {"from": "Code", "to": "Test", "desc": "Логика API (Фронт + Бэк)", "out": 2000},
+    {"from": "Test", "to": "Code", "desc": "Тесты провалены: лог ошибки", "out": 1500, "is_error": true},
+    {"from": "Code", "to": "Test", "desc": "Исправление логики", "out": 2000},
+    {"from": "Test", "to": "Rules", "desc": "Повторный прогон (Успешно)", "out": 1500},
+    {"from": "Rules", "to": "Code", "desc": "Код забракован линтером", "out": 1000, "is_error": true},
+    {"from": "Code", "to": "Test", "desc": "Рефакторинг под стайлгайд", "out": 2000},
+    {"from": "Test", "to": "Rules", "desc": "Тесты после рефакторинга", "out": 1500},
+    {"from": "Rules", "to": "Doc", "desc": "Финальное одобрение (Approved)", "out": 500},
+    {"from": "Doc", "to": "User", "desc": "Готово", "out": 2000}
+  ]
+}

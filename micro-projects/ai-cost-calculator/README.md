@@ -34,4 +34,11 @@ I've described the internal logic of Orchestrator (the automation process state 
 ---
 
 ## Phase 4
+Prototype `CLI application in Python`:
+- [about](https://github.com/tanyashipunova/vasotapy/wiki/CLI-App-on-Python)
+- [src](src/README.md)
+
+---
+
+## Phase 5
 *IN PROGRESS*

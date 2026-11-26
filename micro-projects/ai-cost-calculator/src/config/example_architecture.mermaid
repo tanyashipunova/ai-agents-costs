@@ -1,0 +1,29 @@
+sequenceDiagram
+    autonumber
+    actor User as Пользователь (PM)
+    participant UI as Агент-Интерфейс
+    participant Code as Агент-Код
+    participant Test as Агент-Тесты
+    participant Rules as Агент-Правила
+    participant Doc as Агент-Документация
+
+    note over UI: [In: 50.0k] -> UI-код кнопки
+    UI->>Code: UI-код кнопки [Out: 2.0k]
+    note over Code: [In: 52.0k] -> Логика API (Фронт + Бэк)
+    Code->>Test: Логика API (Фронт + Бэк) [Out: 2.0k]
+    note over Test: [In: 54.0k] -> Тесты провалены: лог ошибки
+    Test-->>Code: Тесты провалены: лог ошибки [Out: 1.5k]
+    note over Code: [In: 55.5k] -> Исправление логики
+    Code->>Test: Исправление логики [Out: 2.0k]
+    note over Test: [In: 57.5k] -> Повторный прогон (Успешно)
+    Test->>Rules: Повторный прогон (Успешно) [Out: 1.5k]
+    note over Rules: [In: 59.0k] -> Код забракован линтером
+    Rules-->>Code: Код забракован линтером [Out: 1.0k]
+    note over Code: [In: 60.0k] -> Рефакторинг под стайлгайд
+    Code->>Test: Рефакторинг под стайлгайд [Out: 2.0k]
+    note over Test: [In: 62.0k] -> Тесты после рефакторинга
+    Test->>Rules: Тесты после рефакторинга [Out: 1.5k]
+    note over Rules: [In: 63.5k] -> Финальное одобрение (Approved)
+    Rules->>Doc: Финальное одобрение (Approved) [Out: 0.5k]
+    note over Doc: [In: 64.0k] -> Готово
+    Doc-->>User: Готово [Out: 2.0k]
