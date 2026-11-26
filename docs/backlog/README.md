@@ -10,7 +10,16 @@
 ## 🍊 2. IN PROGRESS (Active Development)
 *What I am focusing on right now. Max 2-3 items to avoid context switching.*
 - [ ] developing Product Analyst Quiz CLI
+- [ ] developing AI-content Tracker
+- [ ] updating wiki pages:
+    - Data Processing.md
+    - ML Contest Ranking.md
+    - ML Contests.md
+    - ML Design Document.md
 
 ## 🍏 3. DONE (Archive)
 *Completed milestones and successfully shipped micro-projects.*
 - [x] Set up central AI R&D Hub repository structure and relative linking.
+- [x] Prototype `CLI application in Python`:
+    - [about](https://github.com/tanyashipunova/vasotapy/wiki/CLI-App-on-Python)
+    - [src](src/README.md)
